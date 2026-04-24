@@ -19,7 +19,7 @@ npx ts-node src/deploy.ts       # one-time: registers /meet globally
 npx ts-node src/bot.ts          # start the bot
 ```
 
-To get the env values: create an application at [discord.com/developers/applications](https://discord.com/developers/applications), copy the **Application ID** from *General Information* and a fresh token from *Bot → Reset Token*. On *Installation*, enable **User Install** so the command works in any DM or group chat. Share the install link from that same page with yourself and friends.
+To get the env values: create an application at [discord.com/developers/applications](https://discord.com/developers/applications), copy the **Application ID** from *General Information* and a fresh token from *Bot → Reset Token*. On *Installation*, enable both **User Install** and **Guild Install** (scope: `applications.commands` — no `bot` scope needed, since interactions carry their own auth). The generated install link covers both modes: install to your account and `/meet` follows you into any DM, group, or server; install to a server and everyone there gets it without installing anything themselves.
 
 Optional — add to `package.json` for nicer scripts:
 
