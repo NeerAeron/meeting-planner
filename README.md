@@ -2,6 +2,10 @@
 
 > Schedule meetings across timezones in Discord — without leaving the chat.
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Demo of /meet" width="600">
+</p>
+
 `/meet @friend your_city:Tokyo their_city:Berlin` opens an ephemeral setup right where you ran it. Pick a day, see every hour color-coded for both timezones (☀️ both in working hours, 🌤️ one of you is, 🌙 off-hours), propose up to 3 times across any mix of days, and send. The proposal posts in the chat with times primary in the receiver's zone. If your guess of their timezone was wrong, they tap *Wrong timezone?* and fix it in place — no re-send, no channel clutter. Accept a time and it's confirmed.
 
 Works in **servers, DMs, and group DMs**. No profile setup. No persistent storage. One command.
